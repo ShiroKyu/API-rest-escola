@@ -41,4 +41,7 @@ module.exports = {
  * npx sequelize migration:create --name=users
  * npx sequelize db:migrate
  * npx sequelize db:migrate:undo
+ *
+ * Criar seeds
+ * npx sequelize seed:generate --name criar-usuarios
  */
