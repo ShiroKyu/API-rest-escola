@@ -9,6 +9,8 @@ export default {
       if (file.mimetype !== 'image/png' && file.mimetype !== 'image/jpeg') {
         return cb(new multer.MulterError('Arquivo precisa ser PNG Ou JPG'));
       }
+
+      return cb(null, true);
     },
     destination: (req, file, cb) => {
       cb(null, resolve(__dirname, '..', '..', 'uploads'));
